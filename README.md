@@ -2,84 +2,117 @@
 
 ![Avatar](https://github.com/husniadil/aisyah-ai/blob/main/assets/avatar.jpg?raw=true)
 
-Aisyah AI is a multi-functional project that provides various tools and capabilities for interacting with users, setting reminders, processing images, and making web requests. It leverages Cloudflare Workers for serverless functions, utilizing APIs from OpenAI for language processing and image recognition, as well as real-time weather data and Telegram for message handling.
+Aisyah AI is a powerful Telegram bot built with Cloudflare Workers that combines multiple AI capabilities. It can browse the web, set reminders, speak, predict weather, analyze images, and understand voice messages. The bot maintains context in conversations through Redis, making it perfect for both private chats and group interactions.
 
-## Features
+## 📸 Screenshots & Demo
 
-- **🗣️ Natural Language Processing**: 
-  - **Understanding Queries**: Aisyah AI can comprehend natural language inputs, making it easy for users to ask questions in plain English.
-  - **Conversational Responses**: It provides conversational responses, making interactions feel more human-like and engaging.
-
-- **🖼️ Image Recognition**: 
-  - **Image Analysis**: Aisyah AI can analyze images to identify objects, people, and scenes.
-  - **Information Extraction**: It can provide detailed information about the contents of an image, such as identifying landmarks or categorizing items.
-
-- **🌤️ Weather Forecast**: 
-  - **Real-time Data**: Aisyah AI provides up-to-date weather information for any specified location.
-
-- **⏰ Reminder Service**: 
-  - **Setting Reminders**: Users can set reminders for various tasks and events.
-  - **Notifications**: Aisyah AI sends timely notifications to remind users of their scheduled tasks.
-
-- **🌐 Web Requests**: 
-  - **Data Retrieval**: Aisyah AI can perform web requests to fetch information from various online sources.
-  - **Processing Results**: The AI processes and presents the retrieved data in a user-friendly format.
-
-- **📲 Telegram Integration**: 
-  - **Seamless Messaging**: Aisyah AI interacts with users via Telegram, providing a smooth and efficient messaging experience.
-  - **Real-time Interaction**: The integration allows for real-time communication and quick responses.
-
-- **☁️ Serverless Functions**: 
-  - **Scalability**: Leveraging Cloudflare Workers ensures that Aisyah AI can scale efficiently to handle increasing workloads.
-  - **Reliability**: Serverless architecture provides high availability and reliability, minimizing downtime.
-  - **Cost-effective**: Serverless functions help in reducing operational costs by only charging for actual usage.
-
-- **🔗 API Integration**: 
-  - **Advanced Capabilities**: By integrating with various APIs, Aisyah AI can offer advanced functionalities beyond basic responses.
-  - **Third-party Services**: It connects with third-party services to enhance its capabilities, such as language translation, sentiment analysis, and more.
-  - **Continuous Improvement**: Regular updates and new API integrations keep Aisyah AI up-to-date with the latest technological advancements.
-
-## Screenshots
-
-[<img src="https://github.com/husniadil/aisyah-ai/blob/main/assets/start-1.png?raw=true" width="200" alt="start-1" />](https://github.com/husniadil/aisyah-ai/blob/main/assets/start-1.png)
-[<img src="https://github.com/husniadil/aisyah-ai/blob/main/assets/start-2.png?raw=true" width="200" alt="start-2" />](https://github.com/husniadil/aisyah-ai/blob/main/assets/start-2.png)
-[<img src="https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-llm-model.png?raw=true" width="200" alt="settings-llm-model" />](https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-llm-model.png)
-[<img src="https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-persona.png?raw=true" width="200" alt="settings-persona" />](https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-persona.png)
-[<img src="https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-voice.png?raw=true" width="200" alt="settings-voice" />](https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-voice.png)
-[<img src="https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-chat-history.png?raw=true" width="200" alt="settings-chat-history" />](https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-chat-history.png)
 [<img src="https://github.com/husniadil/aisyah-ai/blob/main/assets/chat.png?raw=true" width="200" alt="chat" />](https://github.com/husniadil/aisyah-ai/blob/main/assets/chat.png)
 [<img src="https://github.com/husniadil/aisyah-ai/blob/main/assets/group-chat.png?raw=true" width="200" alt="group-chat" />](https://github.com/husniadil/aisyah-ai/blob/main/assets/group-chat.png)
+[<img src="https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-llm-model.png?raw=true" width="200" alt="settings-llm-model" />](https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-llm-model.png)
+[<img src="https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-persona.png?raw=true" width="200" alt="settings-persona" />](https://github.com/husniadil/aisyah-ai/blob/main/assets/settings-persona.png)
 
-## Usage
+## ✨ Features
 
-**Personal Use Only**: Please note that Aisyah AI is a personal project and not intended for production use. It is designed for personal experimentation and learning purposes.
+- **🤖 Advanced AI Capabilities**
+  - Natural language understanding with GPT models
+  - Image analysis and object recognition
+  - Speech-to-text and text-to-speech conversion
+  - Context-aware conversations in both private and group chats
 
-- **Experimentation**: Users can experiment with different features and functionalities to learn more about AI and serverless technologies.
-- **Learning**: Aisyah AI serves as an educational tool for those interested in understanding how AI and serverless functions work.
-- **Customization**: Users can customize Aisyah AI for their personal needs, adding new features or modifying existing ones.
+- **🎯 Smart Tools**
+  - Web browsing and information retrieval
+  - Real-time weather forecasts
+  - Task reminders and notifications
+  - Group chat support with context retention
 
-## Setup
+- **☁️ Modern Architecture**
+  - Built on Cloudflare Workers for high scalability
+  - Microservices architecture for modularity
+  - Redis-powered chat history
+  - Cost-effective serverless deployment
 
-### Wrangler Configuration
+- **🔗 API Integrations**
+  - OpenAI GPT for language processing
+  - Google Custom Search for web browsing
+  - OpenWeatherMap for weather data
+  - Telegram Bot API for messaging
+  - Supabase for file storage
+  - Additional services for enhanced capabilities
 
-Before running the project, you need to set up the wrangler configuration files:
+## 📝 Usage
 
-1. Set up Cloudflare API Token:
-   - Go to https://dash.cloudflare.com/profile/api-tokens
-   - Locate "Edit Cloudflare Workers", then "Use Template"
-   - Fill out the rules
-   - Click "Continue to summary"
-   - Export the token as an environment variable:
-     ```bash
-     export CLOUDFLARE_API_TOKEN=your_api_token_here
-     ```
-   - For persistent configuration, add it to your shell profile (~/.zshrc, ~/.bashrc, etc.):
-     ```bash
-     echo 'export CLOUDFLARE_API_TOKEN=your_api_token_here' >> ~/.zshrc
-     ```
+### Basic Commands
+- `/start` - Begin interaction with the bot
+- `/settings` - Configure bot settings (LLM model, persona, voice, etc.)
+- `/help` - Get help about available commands
 
-2. Copy the example configuration files:
+**Note**: This is a personal project designed for learning and experimentation purposes.
+
+## 🏗️ Project Structure
+
+The project is organized into several microservices:
+
+- `aisyah-ai-telegraph`: Main orchestrator that handles Telegram interactions
+- `aisyah-ai-agent`: Core AI agent that processes requests
+- `aisyah-ai-explorer`: Web browsing capability
+- `aisyah-ai-reminder`: Reminder management
+- `aisyah-ai-sonata`: Text-to-speech service
+- `aisyah-ai-storm`: Weather prediction
+- `aisyah-ai-vision`: Image analysis
+- `aisyah-ai-whisper`: Speech-to-text service
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [Yarn](https://yarnpkg.com/) (v4.3.1 or later)
+- [Cloudflare Account](https://dash.cloudflare.com/sign-up) (Free tier works)
+- [Telegram Bot Token](https://core.telegram.org/bots#how-do-i-create-a-bot)
+- [OpenAI API Key](https://platform.openai.com/api-keys)
+- Redis instance for chat history (You can use [Upstash](https://upstash.com/) free tier)
+
+### Installation
+
+1. Clone the repository:
    ```bash
+   git clone https://github.com/husniadil/aisyah-ai.git
+   cd aisyah-ai
+   ```
+
+2. Install dependencies:
+   ```bash
+   yarn install
+   ```
+
+3. Set up Cloudflare:
+   First, get your Cloudflare API Token:
+   1. Go to https://dash.cloudflare.com/profile/api-tokens
+   2. Locate "Edit Cloudflare Workers", then "Use Template"
+   3. Fill out the rules
+   4. Click "Continue to summary" and create the token
+   5. Export the token as an environment variable:
+      ```bash
+      export CLOUDFLARE_API_TOKEN=your_api_token_here
+      ```
+   6. For persistent configuration, add it to your shell profile (~/.zshrc, ~/.bashrc, etc.):
+      ```bash
+      echo 'export CLOUDFLARE_API_TOKEN=your_api_token_here' >> ~/.zshrc
+      ```
+
+   Note: Do not use `wrangler login` as it conflicts with the API token authentication method.
+
+   After setting up the API token, create the required KV namespace:
+   ```bash
+   # Create KV namespace for settings
+   yarn w aisyah-ai-agent wrangler kv:namespace create SETTINGS
+   ```
+
+   Make note of the KV namespace ID as you'll need it in the next step.
+
+4. Configure environment files:
+   ```bash
+   # Copy Cloudflare configuration files
    cp packages/aisyah-ai-agent/wrangler.toml.example packages/aisyah-ai-agent/wrangler.toml
    cp packages/aisyah-ai-explorer/wrangler.toml.example packages/aisyah-ai-explorer/wrangler.toml
    cp packages/aisyah-ai-reminder/wrangler.toml.example packages/aisyah-ai-reminder/wrangler.toml
@@ -88,21 +121,193 @@ Before running the project, you need to set up the wrangler configuration files:
    cp packages/aisyah-ai-telegraph/wrangler.toml.example packages/aisyah-ai-telegraph/wrangler.toml
    cp packages/aisyah-ai-vision/wrangler.toml.example packages/aisyah-ai-vision/wrangler.toml
    cp packages/aisyah-ai-whisper/wrangler.toml.example packages/aisyah-ai-whisper/wrangler.toml
+
+   # Copy environment variables
+   cp packages/aisyah-ai-agent/.dev.vars.example packages/aisyah-ai-agent/.dev.vars
+   cp packages/aisyah-ai-explorer/.dev.vars.example packages/aisyah-ai-explorer/.dev.vars
+   cp packages/aisyah-ai-reminder/.dev.vars.example packages/aisyah-ai-reminder/.dev.vars
+   cp packages/aisyah-ai-sonata/.dev.vars.example packages/aisyah-ai-sonata/.dev.vars
+   cp packages/aisyah-ai-storm/.dev.vars.example packages/aisyah-ai-storm/.dev.vars
+   cp packages/aisyah-ai-telegraph/.dev.vars.example packages/aisyah-ai-telegraph/.dev.vars
+   cp packages/aisyah-ai-vision/.dev.vars.example packages/aisyah-ai-vision/.dev.vars
+   cp packages/aisyah-ai-whisper/.dev.vars.example packages/aisyah-ai-whisper/.dev.vars
    ```
 
-3. Update the configuration files with your actual values:
-   - In `packages/aisyah-ai-agent/wrangler.toml`:
-     - Replace `<YOUR_KV_NAMESPACE_ID>` with your KV namespace ID
-   - In `packages/aisyah-ai-sonata/wrangler.toml`:
-     - Replace `<YOUR_SUPABASE_STORAGE_KEY>` with your Supabase storage key
-     - Replace `<YOUR_KV_NAMESPACE_ID>` with your KV namespace ID
+5. Configure package-specific settings:
 
-4. Create KV namespaces if you haven't:
+   ### Cloudflare KV Namespaces
+   Create the required KV namespaces:
    ```bash
-   wrangler kv:namespace create SETTINGS
+   # For settings storage
+   yarn w aisyah-ai-agent wrangler kv:namespace create SETTINGS
+   
+   # For chat history
+   yarn w aisyah-ai-telegraph wrangler kv:namespace create CHAT_HISTORY
+   
+   # For reminders
+   yarn w aisyah-ai-reminder wrangler kv:namespace create REMINDERS
    ```
 
-Note: The actual wrangler.toml files are gitignored to prevent committing sensitive information.
+   ### Package-specific Configurations
+
+   #### aisyah-ai-telegraph (Main Bot)
+   ```bash
+   # In packages/aisyah-ai-telegraph/.dev.vars
+   TELEGRAM_BOT_TOKEN=your_telegram_bot_token
+   UPSTASH_REDIS_REST_URL=your_redis_rest_url
+   UPSTASH_REDIS_REST_TOKEN=your_redis_rest_token
+   ```
+
+   #### aisyah-ai-agent (Core AI)
+   ```bash
+   # In packages/aisyah-ai-agent/.dev.vars
+   OPENAI_API_KEY=your_openai_api_key
+   LANGCHAIN_API_KEY=your_langchain_api_key
+   CLOUDFLARE_SUBDOMAIN=your_subdomain
+   ```
+
+   #### aisyah-ai-vision (Image Analysis)
+   ```bash
+   # In packages/aisyah-ai-vision/.dev.vars
+   OPENAI_API_KEY=your_openai_api_key
+   ```
+
+   #### aisyah-ai-whisper (Speech-to-Text)
+   ```bash
+   # In packages/aisyah-ai-whisper/.dev.vars
+   OPENAI_API_KEY=your_openai_api_key
+   ```
+
+   #### aisyah-ai-sonata (Text-to-Speech)
+   ```bash
+   # In packages/aisyah-ai-sonata/.dev.vars
+   OPENAI_API_KEY=your_openai_api_key
+   SUPABASE_PROJECT_URL=your_supabase_project_url
+   SUPABASE_STORAGE_KEY=your_supabase_storage_key
+   ```
+
+   #### aisyah-ai-storm (Weather)
+   ```bash
+   # In packages/aisyah-ai-storm/.dev.vars
+   OPENWEATHERMAP_API_KEY=your_openweathermap_api_key
+   ```
+
+   #### aisyah-ai-explorer (Web Browser)
+   ```bash
+   # In packages/aisyah-ai-explorer/.dev.vars
+   # Get from https://programmablesearchengine.google.com/
+   GOOGLE_SEARCH_API_KEY=your_google_api_key
+   GOOGLE_SEARCH_ENGINE_ID=your_search_engine_id
+   GOOGLE_SEARCH_API_BASE_URL=https://www.googleapis.com/customsearch/v1
+   JINA_READER_PROXY_BASE_URL=your_jina_reader_proxy_url
+   ```
+
+   ### Update wrangler.toml Files
+   Update each package's `wrangler.toml` with the corresponding KV namespace IDs:
+
+   ```toml
+   # In packages/aisyah-ai-telegraph/wrangler.toml
+   kv_namespaces = [
+     { binding = "CHAT_HISTORY", id = "your_chat_history_namespace_id" }
+   ]
+
+   # In packages/aisyah-ai-agent/wrangler.toml
+   kv_namespaces = [
+     { binding = "SETTINGS", id = "your_settings_namespace_id" }
+   ]
+
+   # In packages/aisyah-ai-reminder/wrangler.toml
+   kv_namespaces = [
+     { binding = "REMINDERS", id = "your_reminders_namespace_id" }
+   ]
+   ```
+
+6. Deploy the workers:
+   ```bash
+   yarn deploy
+   ```
+
+7. Set up your Telegram bot:
+   - Create a new bot with [@BotFather](https://t.me/botfather)
+   - Set the webhook URL to your Cloudflare Worker endpoint
+   - Configure the bot settings through Telegram chat interface
+
+## 🛠️ Development
+
+### Available Scripts
+
+- `yarn w`: Run workspace-specific commands
+- `yarn deploy`: Deploy all workers
+- `yarn types`: Generate TypeScript types
+- `yarn format`: Format code using Biome
+
+### Adding New Features
+
+1. Create a new package in the `packages` directory
+2. Implement your feature using Cloudflare Workers
+3. Add configuration in `wrangler.toml`
+4. Register the new capability in `aisyah-ai-agent`
+
+## 🔧 Additional Setup
+
+### Redis Configuration
+
+1. Set up a Redis instance:
+   - Create a free Redis database at [Upstash](https://upstash.com/)
+   - Get your Redis connection URL and authentication details
+
+2. Configure Redis in your environment:
+   ```bash
+   # Add to packages/aisyah-ai-telegraph/.dev.vars
+   UPSTASH_REDIS_REST_URL=your_redis_rest_url
+   UPSTASH_REDIS_REST_TOKEN=your_redis_rest_token
+   ```
+
+### Required API Keys
+
+Make sure to obtain and configure these API keys:
+- OpenAI API key for LLM and vision capabilities
+- LangChain API key for enhanced language processing
+- OpenWeatherMap API key for weather forecasts
+- Supabase project and storage keys for file handling
+
+Add them to the respective `.dev.vars` files in each package.
+
+## ❗ Troubleshooting
+
+### Common Issues
+
+1. **Worker Deployment Fails**
+   - Ensure Cloudflare API token has correct permissions
+   - Check if worker names in `wrangler.toml` are unique
+   - Verify KV namespace bindings are correct
+
+2. **Bot Not Responding**
+   - Confirm webhook URL is correctly set
+   - Check Telegram bot token validity
+   - Verify Redis connection is working
+
+3. **Features Not Working**
+   - Ensure all required API keys are valid and properly configured
+   - Check corresponding worker logs in Cloudflare dashboard
+   - Verify environment variables are set correctly
+
+### Debug Mode
+
+Enable debug mode by setting:
+```bash
+# Add to .dev.vars
+DEBUG_MODE=true
+```
+
+This will provide more detailed logs in the worker console.
+
+### Getting Help
+
+If you encounter issues:
+1. Check the [Issues](https://github.com/husniadil/aisyah-ai/issues) page
+2. Review Cloudflare Workers logs
+3. Enable debug mode for more detailed logging
 
 ## License
 
