@@ -171,3 +171,7 @@ dist
 worker-configuration.d.ts
 .dev.vars
 .wrangler/
+wrangler.toml
+
+# Keep example files
+!wrangler.toml.example

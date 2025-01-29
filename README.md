@@ -58,6 +58,38 @@ Aisyah AI is a multi-functional project that provides various tools and capabili
 - **Learning**: Aisyah AI serves as an educational tool for those interested in understanding how AI and serverless functions work.
 - **Customization**: Users can customize Aisyah AI for their personal needs, adding new features or modifying existing ones.
 
+## Setup
+
+### Wrangler Configuration
+
+Before running the project, you need to set up the wrangler configuration files:
+
+1. Copy the example configuration files:
+   ```bash
+   cp packages/aisyah-ai-agent/wrangler.toml.example packages/aisyah-ai-agent/wrangler.toml
+   cp packages/aisyah-ai-explorer/wrangler.toml.example packages/aisyah-ai-explorer/wrangler.toml
+   cp packages/aisyah-ai-reminder/wrangler.toml.example packages/aisyah-ai-reminder/wrangler.toml
+   cp packages/aisyah-ai-sonata/wrangler.toml.example packages/aisyah-ai-sonata/wrangler.toml
+   cp packages/aisyah-ai-storm/wrangler.toml.example packages/aisyah-ai-storm/wrangler.toml
+   cp packages/aisyah-ai-telegraph/wrangler.toml.example packages/aisyah-ai-telegraph/wrangler.toml
+   cp packages/aisyah-ai-vision/wrangler.toml.example packages/aisyah-ai-vision/wrangler.toml
+   cp packages/aisyah-ai-whisper/wrangler.toml.example packages/aisyah-ai-whisper/wrangler.toml
+   ```
+
+2. Update the configuration files with your actual values:
+   - In `packages/aisyah-ai-agent/wrangler.toml`:
+     - Replace `<YOUR_KV_NAMESPACE_ID>` with your KV namespace ID
+   - In `packages/aisyah-ai-sonata/wrangler.toml`:
+     - Replace `<YOUR_SUPABASE_STORAGE_KEY>` with your Supabase storage key
+     - Replace `<YOUR_KV_NAMESPACE_ID>` with your KV namespace ID
+
+3. Create KV namespaces if you haven't:
+   ```bash
+   wrangler kv:namespace create SETTINGS
+   ```
+
+Note: The actual wrangler.toml files are gitignored to prevent committing sensitive information.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
