@@ -22,7 +22,8 @@ export class ExplorerTool extends DynamicStructuredTool {
     super({
       name: "browse_web",
       schema: BrowseWebInput,
-      description: "Useful for exploring the web",
+      description:
+        "Use this tool to search the web and get factual information. ALWAYS use this tool when you need to answer questions about current events, facts, or any information you're not 100% certain about. This helps prevent hallucination.",
       func: (input: BrowseWebInput) => {
         console.log("ExplorerTool ~ input:", input);
         return this.searchGoogleAndGetWebContentInput(input).then(
