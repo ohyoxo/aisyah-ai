@@ -64,7 +64,21 @@ Aisyah AI is a multi-functional project that provides various tools and capabili
 
 Before running the project, you need to set up the wrangler configuration files:
 
-1. Copy the example configuration files:
+1. Set up Cloudflare API Token:
+   - Go to https://dash.cloudflare.com/profile/api-tokens
+   - Locate "Edit Cloudflare Workers", then "Use Template"
+   - Fill out the rules
+   - Click "Continue to summary"
+   - Export the token as an environment variable:
+     ```bash
+     export CLOUDFLARE_API_TOKEN=your_api_token_here
+     ```
+   - For persistent configuration, add it to your shell profile (~/.zshrc, ~/.bashrc, etc.):
+     ```bash
+     echo 'export CLOUDFLARE_API_TOKEN=your_api_token_here' >> ~/.zshrc
+     ```
+
+2. Copy the example configuration files:
    ```bash
    cp packages/aisyah-ai-agent/wrangler.toml.example packages/aisyah-ai-agent/wrangler.toml
    cp packages/aisyah-ai-explorer/wrangler.toml.example packages/aisyah-ai-explorer/wrangler.toml
@@ -76,14 +90,14 @@ Before running the project, you need to set up the wrangler configuration files:
    cp packages/aisyah-ai-whisper/wrangler.toml.example packages/aisyah-ai-whisper/wrangler.toml
    ```
 
-2. Update the configuration files with your actual values:
+3. Update the configuration files with your actual values:
    - In `packages/aisyah-ai-agent/wrangler.toml`:
      - Replace `<YOUR_KV_NAMESPACE_ID>` with your KV namespace ID
    - In `packages/aisyah-ai-sonata/wrangler.toml`:
      - Replace `<YOUR_SUPABASE_STORAGE_KEY>` with your Supabase storage key
      - Replace `<YOUR_KV_NAMESPACE_ID>` with your KV namespace ID
 
-3. Create KV namespaces if you haven't:
+4. Create KV namespaces if you haven't:
    ```bash
    wrangler kv:namespace create SETTINGS
    ```
