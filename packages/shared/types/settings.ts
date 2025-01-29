@@ -23,11 +23,7 @@ export const AgentSettings = z.object({
   llm: z
     .object({
       model: z
-        .union([
-          z.literal("gpt-3.5-turbo"),
-          z.literal("gpt-4o-mini"),
-          z.literal("gpt-4o"),
-        ])
+        .union([z.literal("gpt-3.5-turbo"), z.literal("gpt-4o-mini")])
         .optional()
         .default("gpt-4o-mini")
         .describe("The model"),
