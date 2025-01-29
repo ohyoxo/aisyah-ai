@@ -102,14 +102,6 @@ The project is organized into several microservices:
 
    Note: Do not use `wrangler login` as it conflicts with the API token authentication method.
 
-   After setting up the API token, create the required KV namespace:
-   ```bash
-   # Create KV namespace for settings
-   yarn w aisyah-ai-agent wrangler kv:namespace create SETTINGS
-   ```
-
-   Make note of the KV namespace ID as you'll need it in the next step.
-
 4. Configure environment files:
    ```bash
    # Copy Cloudflare configuration files
@@ -136,7 +128,7 @@ The project is organized into several microservices:
 5. Configure package-specific settings:
 
    ### Cloudflare KV Namespaces
-   Create the required KV namespaces:
+   Create the required KV namespaces and make note of their IDs:
    ```bash
    # For settings storage
    yarn w aisyah-ai-agent wrangler kv:namespace create SETTINGS
@@ -203,7 +195,7 @@ The project is organized into several microservices:
    ```
 
    ### Update wrangler.toml Files
-   Update each package's `wrangler.toml` with the corresponding KV namespace IDs:
+   Update each package's `wrangler.toml` with the corresponding KV namespace IDs from the previous step:
 
    ```toml
    # In packages/aisyah-ai-telegraph/wrangler.toml
