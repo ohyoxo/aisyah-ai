@@ -145,6 +145,7 @@ The project is organized into several microservices:
    #### aisyah-ai-telegraph (Main Bot)
    ```bash
    # In packages/aisyah-ai-telegraph/.dev.vars
+   CLOUDFLARE_SUBDOMAIN=your_subdomain
    TELEGRAM_BOT_TOKEN=your_telegram_bot_token
    UPSTASH_REDIS_REST_URL=your_redis_rest_url
    UPSTASH_REDIS_REST_TOKEN=your_redis_rest_token
@@ -156,6 +157,9 @@ The project is organized into several microservices:
    OPENAI_API_KEY=your_openai_api_key
    LANGCHAIN_API_KEY=your_langchain_api_key
    CLOUDFLARE_SUBDOMAIN=your_subdomain
+   AGENT_PERSONA_AISYAH_DEFAULT=your_system_prompt_for_persona_default
+   AGENT_PERSONA_AISYAH_JAWIR=your_system_prompt_for_persona_jawir
+   AGENT_PERSONA_PERSONAL_ASSISTANT=your_system_prompt_for_persona_personal_assistant
    ```
 
    #### aisyah-ai-vision (Image Analysis)
@@ -174,14 +178,17 @@ The project is organized into several microservices:
    ```bash
    # In packages/aisyah-ai-sonata/.dev.vars
    OPENAI_API_KEY=your_openai_api_key
-   SUPABASE_PROJECT_URL=your_supabase_project_url
-   SUPABASE_STORAGE_KEY=your_supabase_storage_key
+   # Get from https://supabase.io
+   SUPABASE_URL=your_supabase_project_url
+   SUPABASE_KEY=your_supabase_storage_key
+   # Get from https://elevenlabs.io
+   ELEVENLABS_API_KEY=your_elevenlabs_api_key
    ```
 
    #### aisyah-ai-storm (Weather)
    ```bash
    # In packages/aisyah-ai-storm/.dev.vars
-   OPENWEATHERMAP_API_KEY=your_openweathermap_api_key
+   OPEN_WEATHER_MAP_API_KEY=your_openweathermap_api_key
    ```
 
    #### aisyah-ai-explorer (Web Browser)
@@ -190,9 +197,14 @@ The project is organized into several microservices:
    # Get from https://programmablesearchengine.google.com/
    GOOGLE_SEARCH_API_KEY=your_google_api_key
    GOOGLE_SEARCH_ENGINE_ID=your_search_engine_id
-   GOOGLE_SEARCH_API_BASE_URL=https://www.googleapis.com/customsearch/v1
-   JINA_READER_PROXY_BASE_URL=your_jina_reader_proxy_url
    ```
+
+   #### aisyah-ai-reminder (Reminders)
+   ```bash
+    # In packages/aisyah-ai-reminder/.dev.vars
+    REMINDERS_APP_ID=your_reminders_app_id
+    REMINDERS_API_KEY=your_reminders_api_key
+    ```
 
    ### Update wrangler.toml Files
    Update each package's `wrangler.toml` with the corresponding KV namespace IDs from the previous step:
