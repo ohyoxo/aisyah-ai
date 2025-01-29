@@ -39,6 +39,17 @@ Aisyah AI is a powerful Telegram bot built with Cloudflare Workers that combines
   - Supabase for file storage
   - Additional services for enhanced capabilities
 
+### 🤔 Why OpenAI Only?
+
+We've chosen to exclusively support OpenAI models (particularly gpt-3.5-turbo and gpt-4o-mini) for several reasons:
+
+1. **Model Consistency**: OpenAI models provide the most consistent and high-quality responses across different languages and use cases.
+2. **Cost-Effectiveness**: gpt-4o-mini offers an excellent balance between output quality and pricing.
+3. **Multilingual Capability**: After extensive testing, OpenAI models demonstrated superior performance in handling multiple languages naturally.
+4. **Implementation Simplicity**: While services like OpenRouter offer access to various models, supporting them would introduce additional complexity in model name mappings and response handling.
+
+Note: We understand the interest in alternative models and providers (like OpenRouter, Anthropic, etc.). However, to maintain code simplicity and ensure consistent bot behavior, we've decided to focus on OpenAI's offerings. If you need to use different models, you'll need to fork the project and modify the model configurations accordingly.
+
 ## 📝 Usage
 
 ### Basic Commands
